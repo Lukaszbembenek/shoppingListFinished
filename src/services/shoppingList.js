@@ -1,5 +1,4 @@
-const mockedShoppingList = [
-    {
+const mockedShoppingList = [{
         name: 'Mleko',
         price: 2.50,
         id: 12
@@ -17,5 +16,9 @@ const mockedShoppingList = [
 ]
 
 export const getShoppingList = () => {
-    return fetch('https://workshops-backend.herokuapp.com/shopping-list').then(res => res.json())
+    return new Promise((resolve) => resolve(mockedShoppingList));
 }
+
+// export const getShoppingList = () => {
+//     return fetch('https://workshops-backend.herokuapp.com/shopping-list').then(res => res.json())
+// }
