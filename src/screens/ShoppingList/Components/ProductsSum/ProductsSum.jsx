@@ -1,7 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-const ProductsSum = ({productsPrice}) => {
-    return (<div>{productsPrice}</div>)
-}
+import styles from './ProductsSum.module.css';
 
-export default ProductsSum
+const ProductsSum = ({ productsPrice }) => {
+  return (
+    !!productsPrice && <div className={styles.sum}>Sum: {productsPrice}</div>
+  );
+};
+
+export default ProductsSum;

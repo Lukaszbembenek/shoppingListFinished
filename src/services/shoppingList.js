@@ -1,4 +1,6 @@
-import { adaptProductsList } from "../utils/dataAdapter"
+import {
+    adaptProductsList
+} from "../utils/dataAdapter"
 
 const mockedShoppingList = [{
         name: 'Mleko',
